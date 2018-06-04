@@ -15,18 +15,18 @@ namespace Chat.ViewsModels
             set { SetProperty(ref _outText, value); }
         }
 
-        public ObservableCollection<TB_CHA_CVS> ListMessages { get; }
+        public ObservableCollection<Mensagem> ListMessages { get; }
         public ICommand SendCommand { get; set; }
 
         public MainViewModel()
         {
-            ListMessages = new ObservableCollection<TB_CHA_CVS>();
+            ListMessages = new ObservableCollection<Mensagem>();
             SendCommand = new Command(SendMsg);
         }
 
         void SendMsg()
         {
-            var message = new TB_CHA_CVS
+            var message = new Mensagem
             {
                 CHA_ID = 1,
                 CHA_CVS_TXT = OutText,

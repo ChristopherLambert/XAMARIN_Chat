@@ -2,7 +2,7 @@ using System;
 
 namespace Chat.Models
 {
-    public class TB_CHA_CVS
+    public class Mensagem
     {
         public int? CHA_CVS_ID { get; set; }
         public int? CHA_ID { get; set; }

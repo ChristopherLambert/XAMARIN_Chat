@@ -10,7 +10,7 @@ namespace Chat.CustomCells
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            var messageVm = item as TB_CHA_CVS;
+            var messageVm = item as Mensagem;
             if (messageVm == null) return null;
 
             if (messageVm.CHA_CVS_OGM.Equals("P")) return this.textOutDataTemplate;
